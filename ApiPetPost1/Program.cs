@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace ApiPetPost
 {
@@ -11,7 +8,6 @@ namespace ApiPetPost
         {
             await PostData();
         }
-
         static async Task PostData()
         {
             try
@@ -54,6 +50,7 @@ namespace ApiPetPost
                 // Capturar y mostrar cualquier excepción
                 Console.WriteLine("Error: " + ex.Message);
             }
+            Console.ReadLine();
         }
     }
 }
